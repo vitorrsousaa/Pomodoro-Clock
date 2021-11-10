@@ -1,0 +1,58 @@
+*{
+    background:#EC7063;
+    padding: 0;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+#clock {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "btn-up1 . btn-up2" "minutes div seconds" "btn-down1 . btn-down2";
+    justify-content: center;
+}
+
+#minutes, #seconds, h1, div {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 11vh 0 7vh 0;
+    font-size: clamp(7vw, 8vw, 9vw);
+}
+
+#minutes, #seconds, div, .btn-menu {
+    font-size: clamp(4vw, 4vw, 7vw)
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    margin: 8vh ;
+}
+
+.btn-menu {
+    width: 14vw;
+    margin: 0 2vw;
+    align-items: center;
+    border: 0px;
+}
+
+.btn-menu:hover {
+    color: black; 
+}
+
+.btn-up > img, .btn-down > img {
+    width: 5vh;
+    height: 5vh;
+}
+.btn-down, .btn-up {
+    align-items: center;
+    border: 0px;
+}
+
+button {
+    cursor: pointer;
+}
